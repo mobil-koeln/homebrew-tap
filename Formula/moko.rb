@@ -5,21 +5,21 @@
 class Moko < Formula
   desc "CLI for querying Deutsche Bahn real-time transit information with interactive TUI"
   homepage "https://github.com/mobil-koeln/moko-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.1.0/moko-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1b0deda1d9640fde15d87b8976dc14e0a0dccae0df7f009e73c06b52d249e963"
+      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.2.0/moko-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ecc0f74be5e95800ba9b267d7df7cf50f23261edea1855b568420daf8c396e9d"
 
       def install
         bin.install "moko"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.1.0/moko-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1d3f1d3280ee33e376be01825b2e74f5afa76e9b05e85421b1ac09fddbee4bb7"
+      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.2.0/moko-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "bb543f8306096f792de78eeeed37ff8f8d6622a3ec60c95cf20e5e8311565ef2"
 
       def install
         bin.install "moko"
@@ -29,15 +29,15 @@ class Moko < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.1.0/moko-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "e47e9fc4bb9e88f469e7ee5a6c2f5c64be98e81d25beafa2c6a0539eaeaf45ac"
+      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.2.0/moko-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "7263f997fe4bfb36a95a929327ce110bbe8209e585ce4d3163e5bbd0166b791b"
       def install
         bin.install "moko"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.1.0/moko-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "dc5e6fdcf4d65883c75fa4350388fa4fe170acf237dec0b09445a7692f56c0d3"
+      url "https://github.com/mobil-koeln/moko-cli/releases/download/v0.2.0/moko-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "d2179e90f554029a99df7cdd5f23c741888558bafb367670ca1758095d2d853b"
       def install
         bin.install "moko"
       end
